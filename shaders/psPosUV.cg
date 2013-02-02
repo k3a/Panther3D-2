@@ -1,0 +1,12 @@
+struct C3E3f_Output {
+  float4 color : COLOR;
+};
+
+C3E3f_Output main(float2 texCoord : TEXCOORD0, float4 color : COLOR, uniform sampler2D decal : TEX0)
+{
+  C3E3f_Output OUT;
+  float3 tcolor = tex2D(decal,texCoord).rgb;
+  OUT.color = float4( color.rgb, tcolor.r);
+  return OUT;
+}
+

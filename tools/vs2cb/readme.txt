@@ -1,0 +1,1 @@
+Small utility to create Code::Blocks project files with all needed configuration.

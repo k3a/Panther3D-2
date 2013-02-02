@@ -1,0 +1,84 @@
+/* Panther3D Engine © 2004-2009 Reversity Studios (www.reversity.org)
+* This contents may be used and/or copied only with the written permission or 
+* terms and conditions stipulated in agreement/contract.
+-----------------------------------------------------------------------------
+Authors: am!go
+*/
+#pragma once
+
+#include "types.h"
+#include <DX/d3d9.h>
+#include "../BufferDescs.h"
+
+namespace P3D
+{
+
+	class CVertexDeclarationWrapper
+	{
+	public:
+		CVertexDeclarationWrapper(const VertexElement *vearray, void *buffer);
+		~CVertexDeclarationWrapper();
+		void Use();
+		inline bool IsValid() { return m_valid; };
+	private:
+		IDirect3DVertexDeclaration9* m_pVertexDeclaration;
+		bool m_valid;
+	};
+
+	class CVertexBufferWrapper
+	{
+	public:
+		/** Constructor */
+		CVertexBufferWrapper();
+		/** Destructor */
+		~CVertexBufferWrapper();
+		
+		/** Create the buffer 
+		\param Desc Pointer to the buffer's data \see sVBDesc
+		\param Data You can insert the data during the creation time. \note Immutable buffers are supposed to be filled with data this way.
+		*/
+		bool Create(sVBDesc &Desc, void *Data = 0);
+		
+		/** Bind the buffer */
+		void Use();
+
+		/** Return the buffer's description */
+		inline const sVBDesc& GetDesc() { return m_desc; };
+
+		/** Obtain a pointer to the buffer's data 
+		\param Data Pointer to the buffer's data 
+		\param Discard Whether or not to discard the current data \note Use this if you don't need to keep the previous data.
+		\param DoNotWait If you set this to true and the buffer is currently in use and thus cannot be locked immediately, 
+		the method will return false. The benefit is that you can do some useful stuff on the CPU instead of waiting.
+		\note Works only when using the D3D10 renderer.
+		*/
+		bool Map(void **Data, bool Discard = false, bool DoNotWait = false);
+		
+		/** Return access to the GPU */
+		void Unmap ();
+				
+		/** Render non-indexed primitives */
+		void Render(PrimitiveType primType, int start, int num);
+
+		/** Render indexed primitives */
+		void RenderIndexed(PrimitiveType primType, int startIndex, int num);
+		
+		/** Update the buffer's content. \note Use this method when the buffer's usage is set to DEFAULT. */
+		bool Update(void *Data);
+
+		/** Pre device reset method \note Has no effect when using D3D10 */
+		void OnLostDevice();
+
+		/** Post device reset method  \note Has no effect when using D3D10 */
+		void OnResetDevice();
+		
+
+	protected:
+		IDirect3DVertexBuffer9* m_pVB;
+		IDirect3DVertexDeclaration9* m_pVertexDeclaration;
+		D3DPOOL m_VBPool;
+		DWORD m_usage;
+		sVBDesc m_desc;
+	};
+
+};

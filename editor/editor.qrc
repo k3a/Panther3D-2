@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icon" >
+        <file>app.ico</file>
+    </qresource>
+    <qresource prefix="/" >
+        <file>rc/tools/tool_rotate.png</file>
+        <file>rc/tools/tool_scale.png</file>
+        <file>rc/tools/tool_select.png</file>
+        <file>rc/tools/tool_translate.png</file>
+    </qresource>
+</RCC>

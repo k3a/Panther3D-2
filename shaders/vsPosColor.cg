@@ -1,0 +1,23 @@
+/* Panther3D Engine © 2004-2008 Reversity Studios (www.reversity.org)
+* This contents may be used and/or copied only with the written permission or
+* terms and conditions stipulated in agreement/contract.
+-----------------------------------------------------------------------------
+Authors: am!go
+*/
+
+struct vsout 
+{
+  float4 position : POSITION;
+  float3 color    : COLOR;
+};
+
+vsout main(float3 position : POSITION, float3 color : COLOR)
+{
+  vsout OUT;
+
+  OUT.position = float4(position, 1);
+  OUT.color    = color;
+
+  return OUT;	
+}
+

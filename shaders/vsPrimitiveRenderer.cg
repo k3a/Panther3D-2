@@ -1,0 +1,19 @@
+
+struct outs 
+{
+  float4 position : POSITION;
+  float4 color    : COLOR;
+  float2 texCoord : TEXCOORD0;
+};
+
+outs main(float3 position : POSITION, float2 texCoord : TEXCOORD0, float4 color : COLOR)
+{
+  outs OUT;
+
+  OUT.position = float4(position, 1);
+  OUT.texCoord = texCoord;
+  OUT.color = color;
+
+  return OUT;	
+}
+

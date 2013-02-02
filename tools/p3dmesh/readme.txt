@@ -1,0 +1,1 @@
+Mesh convertor. Converts .3ds, .x, .obj and many other formats to .rmesh internal engine mesh format. Mesh can contain several subsets and also animated data (bones, hierarchy and animation) for skinning.

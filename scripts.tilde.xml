@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<UserConfiguration TCPHosts="localhost:10000">
+    <Option name="LuaDebugger/BuildCommand" value="" />
+    <Option name="LuaDebugger/RunCommand" value="" />
+    <Option name="LuaDebugger/StopCommand" value="" />
+    <Option name="LuaDebugger/SnippetsFolder" value="LuaSnippets" />
+    <Option name="LuaDebugger/LuaSourceSearchPath">
+        <Value>D:\work\p3d\data</Value>
+    </Option>
+    <Option name="LuaDebugger/PingbackPort" value="52000" />
+    <Option name="LuaDebugger/BreakOnConnection" value="False" />
+    <VersionControl type="None" />
+    <DockPanelState>
+        <DockPanel FormatVersion="1.0" DockLeftPortion="0.25" DockRightPortion="0.25" DockTopPortion="0.25" DockBottomPortion="0.25" ActiveDocumentPane="0" ActivePane="2">
+            <Contents Count="14">
+                <Content ID="0" PersistType="Tilde.TildeApp.ExternalModificationsLogWindow, Tilde, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="True" IsFloat="False">
+                    <ListView name="listView">
+                        <Column Index="0" DisplayIndex="0" Width="60" />
+                        <Column Index="1" DisplayIndex="1" Width="82" />
+                        <Column Index="2" DisplayIndex="2" Width="150" />
+                        <Column Index="3" DisplayIndex="3" Width="60" />
+                    </ListView>
+                </Content>
+                <Content ID="1" PersistType="Tilde.TildeApp.OutputPanel, Tilde, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+                <Content ID="2" PersistType="Tilde.TildeApp.ProjectPanel, Tilde, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+                <Content ID="3" PersistType="Tilde.TildeApp.PropertiesPanel, Tilde, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+                <Content ID="4" PersistType="Tilde.CorePlugins.FindResultsPanel, CorePlugins.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="True" IsFloat="False" />
+                <Content ID="5" PersistType="Tilde.CorePlugins.TextEditor.FindReplaceDialog, CorePlugins.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="True" IsFloat="True" />
+                <Content ID="6" PersistType="Tilde.LuaDebugger.PendingDownloadsWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="pendingFileListView">
+                        <Column Index="0" DisplayIndex="0" Width="228" />
+                        <Column Index="1" DisplayIndex="1" Width="60" />
+                        <Column Index="2" DisplayIndex="2" Width="60" />
+                    </ListView>
+                </Content>
+                <Content ID="7" PersistType="Tilde.LuaDebugger.CallstackWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="callstackListView">
+                        <Column Index="0" DisplayIndex="0" Width="149" />
+                        <Column Index="1" DisplayIndex="2" Width="77" />
+                        <Column Index="2" DisplayIndex="3" Width="60" />
+                        <Column Index="3" DisplayIndex="1" Width="60" />
+                    </ListView>
+                </Content>
+                <Content ID="8" PersistType="Tilde.LuaDebugger.WatchWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="listView1">
+                        <Column Index="0" DisplayIndex="0" Width="117" />
+                        <Column Index="1" DisplayIndex="1" Width="80" />
+                        <Column Index="2" DisplayIndex="2" Width="91" />
+                    </ListView>
+                </Content>
+                <Content ID="9" PersistType="Tilde.LuaDebugger.ThreadsWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="threadListView">
+                        <Column Index="0" DisplayIndex="0" Width="196" />
+                        <Column Index="1" DisplayIndex="1" Width="68" />
+                        <Column Index="2" DisplayIndex="2" Width="170" />
+                        <Column Index="3" DisplayIndex="3" Width="60" />
+                        <Column Index="4" DisplayIndex="4" Width="60" />
+                        <Column Index="5" DisplayIndex="5" Width="80" />
+                        <Column Index="6" DisplayIndex="6" Width="64" />
+                        <Column Index="7" DisplayIndex="7" Width="70" />
+                    </ListView>
+                </Content>
+                <Content ID="10" PersistType="Tilde.LuaDebugger.ConsoleWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False" />
+                <Content ID="11" PersistType="Tilde.LuaDebugger.BreakpointsWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="breakpointListView">
+                        <Column Index="0" DisplayIndex="0" Width="174" />
+                        <Column Index="1" DisplayIndex="1" Width="60" />
+                        <Column Index="2" DisplayIndex="2" Width="60" />
+                    </ListView>
+                </Content>
+                <Content ID="12" PersistType="Tilde.LuaDebugger.LocalsWindow, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">
+                    <ListView name="listView1">
+                        <Column Index="0" DisplayIndex="0" Width="117" />
+                        <Column Index="1" DisplayIndex="1" Width="80" />
+                        <Column Index="2" DisplayIndex="2" Width="91" />
+                    </ListView>
+                </Content>
+                <Content ID="13" PersistType="Tilde.LuaDebugger.LuaScriptView, LuaDebugger.plugin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" AutoHidePortion="0.25" IsHidden="False" IsFloat="False">D:\work\p3d\data\scripts\bootstrap.lua</Content>
+            </Contents>
+            <Panes Count="5">
+                <Pane ID="0" DockState="Document" ActiveContent="13">
+                    <Contents Count="6">
+                        <Content ID="0" RefID="0" />
+                        <Content ID="1" RefID="4" />
+                        <Content ID="2" RefID="6" />
+                        <Content ID="3" RefID="9" />
+                        <Content ID="4" RefID="10" />
+                        <Content ID="5" RefID="13" />
+                    </Contents>
+                </Pane>
+                <Pane ID="1" DockState="DockBottom" ActiveContent="1">
+                    <Contents Count="1">
+                        <Content ID="0" RefID="1" />
+                    </Contents>
+                </Pane>
+                <Pane ID="2" DockState="DockLeft" ActiveContent="2">
+                    <Contents Count="1">
+                        <Content ID="0" RefID="2" />
+                    </Contents>
+                </Pane>
+                <Pane ID="3" DockState="DockRight" ActiveContent="12">
+                    <Contents Count="5">
+                        <Content ID="0" RefID="3" />
+                        <Content ID="1" RefID="7" />
+                        <Content ID="2" RefID="8" />
+                        <Content ID="3" RefID="11" />
+                        <Content ID="4" RefID="12" />
+                    </Contents>
+                </Pane>
+                <Pane ID="4" DockState="Float" ActiveContent="-1">
+                    <Contents Count="1">
+                        <Content ID="0" RefID="5" />
+                    </Contents>
+                </Pane>
+            </Panes>
+            <DockWindows>
+                <DockWindow ID="0" DockState="Document" ZOrderIndex="0">
+                    <NestedPanes Count="1">
+                        <Pane ID="0" RefID="0" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+                    </NestedPanes>
+                </DockWindow>
+                <DockWindow ID="1" DockState="DockLeft" ZOrderIndex="2">
+                    <NestedPanes Count="1">
+                        <Pane ID="0" RefID="2" PrevPane="-1" Alignment="Bottom" Proportion="0.5" />
+                    </NestedPanes>
+                </DockWindow>
+                <DockWindow ID="2" DockState="DockRight" ZOrderIndex="3">
+                    <NestedPanes Count="1">
+                        <Pane ID="0" RefID="3" PrevPane="-1" Alignment="Bottom" Proportion="0.5" />
+                    </NestedPanes>
+                </DockWindow>
+                <DockWindow ID="3" DockState="DockTop" ZOrderIndex="4">
+                    <NestedPanes Count="0" />
+                </DockWindow>
+                <DockWindow ID="4" DockState="DockBottom" ZOrderIndex="1">
+                    <NestedPanes Count="1">
+                        <Pane ID="0" RefID="1" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+                    </NestedPanes>
+                </DockWindow>
+            </DockWindows>
+            <FloatWindows Count="1">
+                <FloatWindow ID="0" Bounds="175, 175, 300, 300" ZOrderIndex="0">
+                    <NestedPanes Count="1">
+                        <Pane ID="0" RefID="4" PrevPane="-1" Alignment="Right" Proportion="0.5" />
+                    </NestedPanes>
+                </FloatWindow>
+            </FloatWindows>
+        </DockPanel>
+    </DockPanelState>
+    <LuaConsoleHistory>
+        <History>spawn_threads()</History>
+    </LuaConsoleHistory>
+</UserConfiguration>

@@ -1,0 +1,1 @@
+Texture convertor. Converts .bmp, .jpg, .png, .dds and many other formats to .rtex internal engine texture format.
